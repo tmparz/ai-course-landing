@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>800元 AI 創業全能課 | ARZ AI Academy｜30年工程師手把手帶路</title>
+    <title>800元 AI 創業全能課 | ARZ Mom Academy｜30年工程師手把手帶路</title>
     <meta name="description" content="不用寫程式，用 AI 三步搞定簡報、網頁、問卷。30年資深工程師親授，限時推廣價 NT$800，立即報名！">
-    <meta property="og:title" content="800元 AI 創業全能課 | ARZ AI Academy">
+    <meta property="og:title" content="800元 AI 創業全能課 | ARZ Mom Academy">
     <meta property="og:description" content="不用寫程式，30年資深工程師教妳用 AI 打造數位品牌">
     <meta property="og:type" content="website">
 
@@ -418,47 +418,63 @@
 
         .pain-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
             margin-top: 48px;
         }
 
+        @media (max-width: 900px) {
+            .pain-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .pain-card {
-            background: var(--stone-100);
-            border-radius: var(--radius-card);
-            padding: 32px 28px;
-            border-left: 4px solid transparent;
+            background: var(--white);
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             transition: var(--transition);
         }
 
         .pain-card:hover {
-            border-left-color: var(--green-light);
-            background: var(--green-pale);
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(45, 79, 62, .14);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            font-family: Georgia, 'Noto Serif TC', serif;
+            font-size: 5rem;
+            line-height: 1;
+            color: var(--green-pale);
+            pointer-events: none;
         }
 
         .pain-quote {
             font-size: 1rem;
-            line-height: 1.75;
-            color: var(--stone-700);
-            font-style: italic;
-        }
-
-        .pain-quote::before {
-            content: '\201C';
-            font-size: 2.5rem;
-            color: var(--green-light);
-            line-height: 0;
-            vertical-align: -0.6em;
-            margin-right: 4px;
-            font-family: Georgia, serif;
-        }
-
-        .pain-tag {
-            display: inline-block;
-            margin-top: 14px;
-            font-size: .8rem;
-            font-weight: 700;
+            line-height: 1.85;
             color: var(--stone-500);
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            padding-top: 28px;
+        }
+
+        .pain-author {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid var(--stone-100);
+            font-weight: 700;
+            font-size: .92rem;
+            color: var(--green-deep);
         }
 
         /* ===== ABOUT ===== */
@@ -880,7 +896,7 @@
     <!-- NAV -->
     <nav id="main-nav" role="navigation" aria-label="主選單">
         <div class="container nav-inner">
-            <a href="#" class="nav-logo" aria-label="ARZ AI Academy 首頁">ARZ <span>AI Academy</span></a>
+            <a href="#" class="nav-logo" aria-label="ARZ Mom Academy 首頁">ARZ <span>Mom Academy</span></a>
             <div class="nav-links" role="menubar">
                 <a href="#about" role="menuitem">關於導師</a>
                 <a href="#course" role="menuitem">課程模組</a>
@@ -913,17 +929,15 @@
 
         <div class="hero-content fade-up">
             <span class="badge hero-badge">給 30–45 歲，渴望優雅轉型的妳</span>
-            <h1>
-                跟妳說喔，<span class="highlight">創業</span>，<br>
-                真的<span class="highlight">不該被技術攔在門外</span>。
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
+                我跟你說喔...<br>
+                <span class="text-[#2D4F3E]">誰說媽媽不能懂 AI？</span>
             </h1>
             <p class="hero-sub">
-                不用寫程式，不用對著空白頁發呆。<br>
-                30 年資深工程師帶妳用 AI 搞定簡報、網頁、問卷，<br>
-                把時間留給家人，把專業留給自己。
+                這堂課，就是為了讓妳說出：「原來我也做得到！」
             </p>
             <div class="hero-btns">
-                <a href="#pricing" class="btn-primary" id="hero-cta-btn">立即用 800 元，開始妳的 AI 之旅</a>
+                <a href="#pricing" class="btn-primary" id="hero-cta-btn">我準備好了，立即報名</a>
                 <a href="#course" class="btn-secondary" id="hero-learn-btn">看課程詳情</a>
             </div>
 
@@ -948,7 +962,7 @@
                         </svg>
                     </div>
                     <div>
-                        <div class="trust-label">3 小時學完</div>
+                        <div class="trust-label">2 小時學完</div>
                         <div class="trust-sub">課後當天就有成品</div>
                     </div>
                 </div>
@@ -977,17 +991,37 @@
                 <h2 class="section-title">這些恐懼，我們完全理解</h2>
             </div>
             <div class="pain-grid">
+                <!-- Case 1: The Dreamer Mom -->
                 <div class="pain-card fade-up">
-                    <p class="pain-quote">想幫品牌做個專屬網站或數位工具，看著密密麻麻的程式碼退縮，不知道能問誰…</p>
-                    <span class="pain-tag">— 45 歲創業品牌主</span>
+                    <div>
+                        <div class="quote-icon" aria-hidden="true">"</div>
+                        <p class="pain-quote">
+                            「想幫自己的手工皂事業做個專屬網站，但看著那些程式碼就退縮，這把年紀了，真的好怕問別人會被笑...」
+                        </p>
+                    </div>
+                    <p class="pain-author">—— 45 歲 斜槓創業媽媽</p>
                 </div>
+
+                <!-- Case 2: The Busy Mom -->
                 <div class="pain-card fade-up">
-                    <p class="pain-quote">每天被繁雜的日常排程與重複性報表綁死，聽說 AI 可以自動化，卻不知怎麼導入…</p>
-                    <span class="pain-tag">— 40 歲中小企業主管</span>
+                    <div>
+                        <div class="quote-icon" aria-hidden="true">"</div>
+                        <p class="pain-quote">
+                            「每天接送小孩、做家事，還要回團購客人的訊息。聽說 AI 可以自動化出報表、寫推廣文，我真的需要有人救救我的時間...」
+                        </p>
+                    </div>
+                    <p class="pain-author">—— 40 歲 團購主媽媽</p>
                 </div>
+
+                <!-- Case 3: The Re-entry Mom -->
                 <div class="pain-card fade-up">
-                    <p class="pain-quote">聽說 AI 很厲害，我想準備國考，打開 ChatGPT 卻不知道怎麼把它變成專屬家教…</p>
-                    <span class="pain-tag">— 38 歲國考考生</span>
+                    <div>
+                        <div class="quote-icon" aria-hidden="true">"</div>
+                        <p class="pain-quote">
+                            「離開職場 10 年，想找份工作卻發現連簡報都不會做了。想用 AI 幫自己重新接軌，找回那個除了『某某媽媽』以外的自己。」
+                        </p>
+                    </div>
+                    <p class="pain-author">—— 38 歲 準備重返職場媽媽</p>
                 </div>
             </div>
         </div>
@@ -1004,11 +1038,10 @@
                     </div>
                 </div>
                 <div class="about-content fade-up">
-                    <h2>「我是技術控，<br>但我更懂妳的恐懼。」</h2>
+                    <h2>「這不是在買工具，<br>這是在買妳的『尊嚴』與『效率』。」</h2>
                     <p>
-                        擁有超過 <strong>30 年底層開發經驗</strong>，我看過科技如何改變世界。<br>
-                        現在，我把這些強大的工具簡化，讓不碰程式碼的妳，<br>
-                        也能擁有媲美大型企業的數位品牌。
+                        <strong>30 年資深工程師</strong>親自轉化技術，<br>
+                        讓學員能優雅上手。
                     </p>
                     <ul class="about-list" role="list">
                         <li>
@@ -1083,7 +1116,8 @@
     <section class="social" aria-label="學員心聲">
         <div class="container">
             <div class="section-header fade-up">
-                <h2 class="section-title">她們說，上完課整個人都不一樣了</h2>
+                <h2 class="section-title">每個媽媽，都值得擁有自己的「數位翅膀」</h2>
+                <p style="color:var(--stone-500);margin-top:12px;font-size:.98rem;">看看姊妹們如何從科技恐懼，走向專業自信</p>
                 <div class="divider" style="margin-top:20px;"></div>
             </div>
             <div class="testimonials">
@@ -1108,12 +1142,12 @@
                     </div>
                 </div>
                 <div class="testimonial-card fade-up">
-                    <p class="testimonial-text">每天花大量時間排程和處理數據。現在學會用 AI 輔助做分析跟自動化整合，真的省下大把時間，可以專注在核心設計上。</p>
+                    <p class="testimonial-text">以前光整理團購訂單就要花我半天，孩子睡了才能開始回訊息。上完課之後，讓 AI 幫我自動整理報表、寫好推廣文，下午接完小孩還有時間喘口氣。這才叫做「做媽媽，也做自己」啊！</p>
                     <div class="testimonial-author">
-                        <div class="author-initial" style="background:#EFF6FF;color:#1D4ED8;">C</div>
+                        <div class="author-initial" style="background:#EFF6FF;color:#1D4ED8;">W</div>
                         <div>
-                            <div class="author-name">陳先生</div>
-                            <div class="author-role">熱傳工程師 / 企業主管</div>
+                            <div class="author-name">吳太太</div>
+                            <div class="author-role">兩寶媽 / 團購經營者</div>
                         </div>
                     </div>
                 </div>
@@ -1150,9 +1184,9 @@
 
     <!-- FOOTER -->
     <footer role="contentinfo">
-        <p class="footer-brand">ARZ AI Academy</p>
-        <p class="footer-tagline">品牌這件事，我有一手。我是鑽石 Amy，陪妳一起優雅地贏回來。</p>
-        <p class="footer-copy">© 2026 ARZ AI Academy. All rights reserved.</p>
+        <p class="footer-brand">ARZ Mom Academy</p>
+        <p class="footer-tagline">品牌這件事，我有一手。我是鑽石 Amy，我會陪妳一起優雅地贏過來。</p>
+        <p class="footer-copy">© 2026 ARZ Mom Academy. All rights reserved.</p>
     </footer>
 
     <script>
