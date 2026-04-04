@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>800元 AI 創業全能課 | ARZ Mom Academy｜30年工程師手把手帶路</title>
-    <meta name="description" content="不用寫程式，用 AI 三步搞定簡報、網頁、問卷。30年資深工程師親授，限時推廣價 NT$800，立即報名！">
-    <meta property="og:title" content="800元 AI 創業全能課 | ARZ Mom Academy">
-    <meta property="og:description" content="不用寫程式，30年資深工程師教妳用 AI 打造數位品牌">
+    <title>AI實戰工作坊｜手把手打造你的AI工作力</title>
+    <meta name="description" content="專為 40+ 媽媽與斜槓女性設計的 AI 實戰工作坊，零基礎也能在一天內學會文案、簡報與海報製作，建立自己的 AI 工作流程。">
+    <meta property="og:title" content="AI實戰工作坊｜手把手打造你的AI工作力">
+    <meta property="og:description" content="一天學會運用 AI 完成文案、簡報與海報，透過線下手把手指導，帶著成果回家。">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -670,6 +670,122 @@
             color: var(--green-deep);
         }
 
+        .section-subtitle {
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: .98rem;
+            line-height: 1.8;
+            color: var(--stone-500);
+        }
+
+        .panel-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .panel-card {
+            background: var(--white);
+            border: 1.5px solid var(--stone-100);
+            border-radius: var(--radius-card);
+            padding: 32px 28px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .panel-card h3 {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.25rem;
+            color: var(--stone-900);
+            margin-bottom: 18px;
+        }
+
+        .panel-card p {
+            font-size: .95rem;
+            line-height: 1.8;
+            color: var(--stone-500);
+        }
+
+        .bullet-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .bullet-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: .96rem;
+            line-height: 1.75;
+            color: var(--stone-700);
+        }
+
+        .panel-note {
+            margin-top: 18px;
+            font-size: .88rem;
+            line-height: 1.7;
+            color: var(--stone-500);
+        }
+
+        .schedule-wrap {
+            margin-top: 32px;
+            background: var(--white);
+            border-radius: 28px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 640px;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 18px 20px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--stone-100);
+        }
+
+        .schedule-table thead th {
+            background: var(--green-deep);
+            color: var(--white);
+            font-family: 'Varela Round', sans-serif;
+            font-size: .9rem;
+            letter-spacing: .02em;
+        }
+
+        .schedule-table tbody td {
+            font-size: .95rem;
+            line-height: 1.7;
+            color: var(--stone-700);
+        }
+
+        .schedule-table tbody tr:nth-child(even) {
+            background: var(--green-bg);
+        }
+
+        .schedule-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            .panel-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 14px 12px;
+                font-size: .88rem;
+            }
+        }
+
         /* ===== SOCIAL PROOF ===== */
         .social {
             padding: 80px 0;
@@ -761,7 +877,7 @@
         }
 
         .price-card {
-            max-width: 620px;
+            max-width: 860px;
             margin: 0 auto;
             background: rgba(255, 255, 255, .08);
             backdrop-filter: blur(12px);
@@ -808,6 +924,48 @@
             gap: 14px 24px;
             text-align: left;
             margin-bottom: 40px;
+        }
+
+        .pricing-table-wrap {
+            margin: 32px 0;
+            border: 1px solid rgba(255, 255, 255, .18);
+            border-radius: 24px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 420px;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 18px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        .pricing-table thead th {
+            background: rgba(255, 255, 255, .12);
+            color: rgba(255, 255, 255, .75);
+            font-size: .85rem;
+            letter-spacing: .02em;
+        }
+
+        .pricing-table tbody td {
+            font-size: .95rem;
+            color: rgba(255, 255, 255, .92);
+        }
+
+        .pricing-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table .price-strong {
+            color: #FDE68A;
+            font-weight: 700;
         }
 
         .price-list li {
@@ -896,12 +1054,14 @@
     <!-- NAV -->
     <nav id="main-nav" role="navigation" aria-label="主選單">
         <div class="container nav-inner">
-            <a href="#" class="nav-logo" aria-label="ARZ Mom Academy 首頁">ARZ <span>Mom Academy</span></a>
+            <a href="#top" class="nav-logo" aria-label="AI實戰工作坊 首頁">AI <span>實戰工作坊</span></a>
             <div class="nav-links" role="menubar">
-                <a href="#about" role="menuitem">關於導師</a>
-                <a href="#course" role="menuitem">課程模組</a>
-                <a href="#pricing" role="menuitem">限時優惠</a>
-                <a href="#pricing" class="nav-cta" role="menuitem">立即報名</a>
+                <a href="#audience" role="menuitem">適合誰</a>
+                <a href="#learning" role="menuitem">你將學會</a>
+                <a href="#outline" role="menuitem">課程大綱</a>
+                <a href="#pricing" role="menuitem">課程費用</a>
+                <a href="https://forms.gle/W2F9CiJtAFFVK9zC7" target="_blank" rel="noopener" class="nav-cta"
+                    role="menuitem">立即報名</a>
             </div>
             <button class="hamburger" id="hamburger-btn" aria-label="開啟選單" aria-expanded="false"
                 aria-controls="mobile-menu">
@@ -909,15 +1069,17 @@
             </button>
         </div>
         <div class="mobile-menu" id="mobile-menu" role="menu">
-            <a href="#about" role="menuitem">關於導師</a>
-            <a href="#course" role="menuitem">課程模組</a>
-            <a href="#pricing" role="menuitem">限時優惠</a>
-            <a href="#pricing" class="nav-cta" role="menuitem">立即報名</a>
+            <a href="#audience" role="menuitem">適合誰</a>
+            <a href="#learning" role="menuitem">你將學會</a>
+            <a href="#outline" role="menuitem">課程大綱</a>
+            <a href="#pricing" role="menuitem">課程費用</a>
+            <a href="https://forms.gle/W2F9CiJtAFFVK9zC7" target="_blank" rel="noopener" class="nav-cta"
+                role="menuitem">立即報名</a>
         </div>
     </nav>
 
     <!-- HERO -->
-    <header class="hero" role="banner">
+    <header id="top" class="hero" role="banner">
         <svg class="hero-blob hero-blob-1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path fill="#2D4F3E"
                 d="M421,308Q386,366,325,399Q264,432,196,415Q128,398,83,339Q38,280,52,210Q66,140,120,91Q174,42,248,34Q322,26,379,78Q436,130,451,215Q466,300,421,308Z" />
@@ -928,17 +1090,18 @@
         </svg>
 
         <div class="hero-content fade-up">
-            <span class="badge hero-badge">給 30–45 歲，渴望優雅轉型的妳</span>
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-8">
-                我跟你說喔...<br>
-                <span class="text-[#2D4F3E]">誰說媽媽不能懂 AI？</span>
+            <span class="badge hero-badge">專為 40+ 媽媽與斜槓女性設計</span>
+            <h1>
+                AI實戰工作坊<br>
+                <span class="highlight">手把手打造你的AI工作力</span>
             </h1>
             <p class="hero-sub">
-                這堂課，就是為了讓妳說出：「原來我也做得到！」
+                一天學會運用 AI 完成文案、簡報與海報，提升工作效率與事業競爭力。透過線下手把手指導，帶著成果回家。
             </p>
             <div class="hero-btns">
-                <a href="#pricing" class="btn-primary" id="hero-cta-btn">我準備好了，立即報名 ↓</a>
-                <a href="#course" class="btn-secondary" id="hero-learn-btn">看課程詳情</a>
+                <a href="https://forms.gle/W2F9CiJtAFFVK9zC7" target="_blank" rel="noopener" class="btn-primary"
+                    id="hero-cta-btn">立即報名</a>
+                <a href="#outline" class="btn-secondary" id="hero-learn-btn">看課程大綱</a>
             </div>
 
             <div class="trust-strip">
@@ -950,8 +1113,8 @@
                         </svg>
                     </div>
                     <div>
-                        <div class="trust-label">不用寫程式</div>
-                        <div class="trust-sub">完全零基礎可上手</div>
+                        <div class="trust-label">零基礎也能上手</div>
+                        <div class="trust-sub">從提問到產出一步步帶妳做</div>
                     </div>
                 </div>
                 <div class="trust-item">
@@ -962,8 +1125,8 @@
                         </svg>
                     </div>
                     <div>
-                        <div class="trust-label">2 小時學完</div>
-                        <div class="trust-sub">課後當天就有成品</div>
+                        <div class="trust-label">線下手把手指導</div>
+                        <div class="trust-sub">小班制即時解答每個卡點</div>
                     </div>
                 </div>
                 <div class="trust-item">
@@ -974,104 +1137,22 @@
                         </svg>
                     </div>
                     <div>
-                        <div class="trust-label">限額小班</div>
-                        <div class="trust-sub">親手帶每位同學</div>
+                        <div class="trust-label">帶著成果回家</div>
+                        <div class="trust-sub">文案、簡報、海報與流程一次完成</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- PAIN POINTS -->
-    <section class="pain" aria-label="妳目前的困境">
+    <!-- AUDIENCE -->
+    <section id="audience" class="course" aria-label="課程適合對象">
         <div class="container">
             <div class="section-header fade-up">
                 <span class="badge"
-                    style="background:var(--amber-light);color:#92400E;border:1px solid #FDE68A;margin-bottom:16px;">妳是不是也這樣？</span>
-                <h2 class="section-title">這些恐懼，我們完全理解</h2>
-            </div>
-            <div class="pain-grid">
-                <!-- Case 1: The Dreamer Mom -->
-                <div class="pain-card fade-up">
-                    <div>
-                        <div class="quote-icon" aria-hidden="true">"</div>
-                        <p class="pain-quote">
-                            「想幫自己的手工皂事業做個專屬網站，但看著那些程式碼就退縮，這把年紀了，真的好怕問別人會被笑...」
-                        </p>
-                    </div>
-                    <p class="pain-author">—— 45 歲 斜槓創業媽媽</p>
-                </div>
-
-                <!-- Case 2: The Busy Mom -->
-                <div class="pain-card fade-up">
-                    <div>
-                        <div class="quote-icon" aria-hidden="true">"</div>
-                        <p class="pain-quote">
-                            「每天接送小孩、做家事，還要回團購客人的訊息。聽說 AI 可以自動化出報表、寫推廣文，我真的需要有人救救我的時間...」
-                        </p>
-                    </div>
-                    <p class="pain-author">—— 40 歲 團購主媽媽</p>
-                </div>
-
-                <!-- Case 3: The Re-entry Mom -->
-                <div class="pain-card fade-up">
-                    <div>
-                        <div class="quote-icon" aria-hidden="true">"</div>
-                        <p class="pain-quote">
-                            「離開職場 10 年，想找份工作卻發現連簡報都不會做了。想用 AI 幫自己重新接軌，找回那個除了『某某媽媽』以外的自己。」
-                        </p>
-                    </div>
-                    <p class="pain-author">—— 38 歲 準備重返職場媽媽</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about" aria-label="關於導師">
-        <div class="container">
-            <div class="about-inner">
-                <div class="avatar-wrap fade-up">
-                    <div class="avatar-ring" aria-hidden="true"></div>
-                    <div class="avatar-box">
-                        <img src="personal.png" alt="ARZ AI Academy 導師，30年資深工程師" />
-                    </div>
-                </div>
-                <div class="about-content fade-up">
-                    <h2>「這不是在買工具，<br>這是在買妳的『尊嚴』與『效率』。」</h2>
-                    <p>
-                        <strong>30 年資深工程師</strong>親自轉化技術，<br>
-                        讓學員能優雅上手。
-                    </p>
-                    <ul class="about-list" role="list">
-                        <li>
-                            <span class="check-icon" aria-hidden="true">✓</span>
-                            <span>30 年系統架構與底層開發經驗</span>
-                        </li>
-                        <li>
-                            <span class="check-icon" aria-hidden="true">✓</span>
-                            <span>企業與個人專屬 AI 導入顧問</span>
-                        </li>
-                        <li>
-                            <span class="check-icon" aria-hidden="true">✓</span>
-                            <span>專注將複雜技術白話化的實戰導師</span>
-                        </li>
-                        <li>
-                            <span class="check-icon" aria-hidden="true">✓</span>
-                            <span>每堂課由導師親自帶著操作</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COURSE -->
-    <section id="course" class="course" aria-label="課程模組">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">這堂課，妳會帶走三樣神器</h2>
-                <p style="color:var(--stone-500);margin-top:12px;font-size:.98rem;">課後當天就能用，不是紙上談兵的空洞理論</p>
+                    style="background:var(--amber-light);color:#92400E;border:1px solid #FDE68A;margin-bottom:16px;">這堂課適合誰</span>
+                <h2 class="section-title">給想把 AI 變成工作助力的妳</h2>
+                <p class="section-subtitle">不管妳是想提升工作效率、經營個人品牌，還是第一次接觸 AI，這堂課都會從最實用的場景開始帶妳進入狀況。</p>
                 <div class="divider" style="margin-top:20px;"></div>
             </div>
             <div class="course-grid">
@@ -1079,113 +1160,303 @@
                     <div class="course-icon amber" aria-hidden="true">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422A12.083 12.083 0 0112 20.055a12.083 12.083 0 01-6.16-9.477L12 14z" />
                         </svg>
                     </div>
-                    <h3>10 分鐘速成 AI 簡報</h3>
-                    <p>不再盯著空白頁發呆。從輸入大綱到精美排版，AI 就是妳的專屬設計師，讓妳的提案自帶氣場。</p>
-                    <span class="course-tag">課後立即可用</span>
+                    <h3>職場媽媽</h3>
+                    <p>想提升工作效率、減少重複作業，把時間留給更重要的人與事。</p>
+                    <span class="course-tag">效率升級</span>
                 </div>
                 <div class="course-card fade-up">
                     <div class="course-icon blue" aria-hidden="true">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18" />
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 9v1m0 0c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3>一鍵生成個人官方網頁</h3>
-                    <p>不用寫程式，就能架出媲美大品牌的官方網站。讓 AI 處理排版與配色，妳只需專注品牌內容。</p>
-                    <span class="course-tag">零基礎可完成</span>
+                    <h3>品牌經營者</h3>
+                    <p>經營精油事業或社群品牌，想更快產出招生文案、活動頁與宣傳素材。</p>
+                    <span class="course-tag">品牌應用</span>
                 </div>
                 <div class="course-card fade-up">
                     <div class="course-icon green" aria-hidden="true">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
-                    <h3>智能高效問卷設計</h3>
-                    <p>不再人工統計數據。用 AI 設計精準問卷，自動分析客戶痛點，讓妳的商業決策更有底氣。</p>
-                    <span class="course-tag">自動整理回覆</span>
+                    <h3>內容製作者</h3>
+                    <p>需要製作簡報、招生文案與海報，想把 AI 用在實際工作成果上。</p>
+                    <span class="course-tag">成果導向</span>
+                </div>
+                <div class="course-card fade-up">
+                    <div class="course-icon amber" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3>AI 新手</h3>
+                    <p>想學會 AI 卻不知道從哪裡開始，希望有人幫妳建立正確觀念與步驟。</p>
+                    <span class="course-tag">新手友善</span>
+                </div>
+                <div class="course-card fade-up">
+                    <div class="course-icon blue" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3>想要被帶著做的人</h3>
+                    <p>不想自己摸索，希望透過實體課程獲得手把手指導與即時回饋。</p>
+                    <span class="course-tag">小班帶練</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
-    <section class="social" aria-label="學員心聲">
+    <!-- LEARNING -->
+    <section id="learning" class="social" aria-label="學習內容與課程成果">
         <div class="container">
             <div class="section-header fade-up">
-                <h2 class="section-title">每個媽媽，都值得擁有自己的「數位翅膀」</h2>
-                <p style="color:var(--stone-500);margin-top:12px;font-size:.98rem;">看看姊妹們如何從科技恐懼，走向專業自信</p>
+                <span class="badge"
+                    style="background:var(--green-pale);color:var(--green-deep);border:1px solid var(--green-light);margin-bottom:16px;">你將學會什麼</span>
+                <h2 class="section-title">從提問到產出，建立妳自己的 AI 工作流程</h2>
+                <p class="section-subtitle">這堂課不只教工具，而是帶妳完成實際工作任務，把 AI 變成每天都用得上的超級助理。</p>
                 <div class="divider" style="margin-top:20px;"></div>
             </div>
-            <div class="testimonials">
-                <div class="testimonial-card fade-up">
-                    <p class="testimonial-text">這堂課讓我跳過寫程式的折磨。不到 2 小時，我就能用「跟 AI 講話」的方式建構出專屬的 Web APP 雛形，真的是零基礎也能懂！</p>
-                    <div class="testimonial-author">
-                        <div class="author-initial" style="background:#E8F5EE;color:#2D4F3E;">H</div>
-                        <div>
-                            <div class="author-name">黃小姐</div>
-                            <div class="author-role">創業品牌主</div>
-                        </div>
+            <div class="panel-grid">
+                <div class="panel-card fade-up">
+                    <h3>你將學會什麼</h3>
+                    <ul class="bullet-list" role="list">
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>如何向 AI 提出精準問題，獲得高品質答案</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>使用 AI 快速生成社群文案與招生內容</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>製作專業簡報與吸睛海報</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>建立個人化 AI 工作流程，提升效率</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>運用 AI 協助設計問卷與活動企劃</span></li>
+                    </ul>
+                </div>
+                <div class="panel-card fade-up">
+                    <h3>課程成果：你將帶走</h3>
+                    <ul class="bullet-list" role="list">
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>一份完整的招生或品牌文案</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>一份專業簡報或宣傳海報</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>一套專屬 AI 提示詞（Prompt）模板</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>個人 AI 工作流程 SOP</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>可立即應用於工作與事業的實戰技能</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUTLINE -->
+    <section id="outline" class="course" aria-label="課程大綱">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="badge"
+                    style="background:var(--amber-light);color:#92400E;border:1px solid #FDE68A;margin-bottom:16px;">課程大綱</span>
+                <h2 class="section-title">從體驗課到一日工作坊，循序漸進把 AI 用起來</h2>
+                <p class="section-subtitle">先用 2 小時快速進入 AI 實作，再透過 6 小時工作坊完整完成自己的內容產出與流程設計。</p>
+                <div class="divider" style="margin-top:20px;"></div>
+            </div>
+
+            <div class="panel-grid">
+                <div class="panel-card fade-up">
+                    <h3>2 小時體驗課：AI 入門與實戰</h3>
+                    <ul class="bullet-list" role="list">
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>AI 時代的關鍵能力：問對問題</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>AI 在文案、簡報與社群的應用</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>現場實作與示範</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>一日工作坊說明</span></li>
+                    </ul>
+                </div>
+                <div class="panel-card fade-up">
+                    <h3>一日實體工作坊（6 小時）</h3>
+                    <p>完整帶妳從明確目標、拆解任務，到文案、簡報、海報與成果優化，一次完成工作坊核心產出。</p>
+                    <p class="panel-note">現場會搭配示範、實作與即時回饋，讓每位學員都能在課堂中完成屬於自己的成果。</p>
+                </div>
+            </div>
+
+            <div class="schedule-wrap fade-up">
+                <table class="schedule-table" aria-label="一日實體工作坊流程">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>主題</th>
+                            <th>內容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:30–10:30</td>
+                            <td>問對問題</td>
+                            <td>明確目標與客群定位</td>
+                        </tr>
+                        <tr>
+                            <td>10:30–12:00</td>
+                            <td>拆解問題</td>
+                            <td>建立 AI 工作流程</td>
+                        </tr>
+                        <tr>
+                            <td>13:00–14:30</td>
+                            <td>AI 文案實作</td>
+                            <td>招生文案與社群貼文</td>
+                        </tr>
+                        <tr>
+                            <td>14:30–15:30</td>
+                            <td>AI 設計應用</td>
+                            <td>簡報與海報製作</td>
+                        </tr>
+                        <tr>
+                            <td>15:30–16:30</td>
+                            <td>成果發表</td>
+                            <td>即時回饋與優化</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="social" aria-label="課程優勢與準備事項">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="badge"
+                    style="background:var(--green-pale);color:var(--green-deep);border:1px solid var(--green-light);margin-bottom:16px;">為什麼選擇這堂課</span>
+                <h2 class="section-title">成果導向、小班實作，讓學習直接接上妳的工作現場</h2>
+                <p class="section-subtitle">不只是知道 AI 可以做什麼，而是知道今天學完以後，明天要怎麼立刻用起來。</p>
+                <div class="divider" style="margin-top:20px;"></div>
+            </div>
+
+            <div class="panel-grid">
+                <div class="panel-card fade-up">
+                    <h3>這堂課的優勢</h3>
+                    <ul class="bullet-list" role="list">
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>小班制教學，確保每位學員學會</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>手把手指導，即時解決問題</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>零基礎也能輕鬆上手</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>成果導向，帶著作品回家</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>市面少見的線下 AI 實戰課程</span></li>
+                    </ul>
+                </div>
+                <div class="panel-card fade-up">
+                    <h3>上課需準備</h3>
+                    <ul class="bullet-list" role="list">
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>筆記型電腦</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>已註冊 ChatGPT 帳號</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>電源線與滑鼠</span></li>
+                        <li><span class="check-icon" aria-hidden="true">✓</span><span>學習與成長的熱情</span></li>
+                    </ul>
+                    <p class="panel-note">帶著自己的實際工作情境來上課，現場會更容易完成屬於妳的文案、簡報與海報成果。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUCTOR -->
+    <section id="instructor" class="about" aria-label="講師特色">
+        <div class="container">
+            <div class="about-inner">
+                <div class="avatar-wrap fade-up">
+                    <div class="avatar-ring" aria-hidden="true"></div>
+                    <div class="avatar-box">
+                        <img src="personal.png" alt="AI實戰工作坊講師形象照" />
                     </div>
                 </div>
-                <div class="testimonial-card fade-up">
-                    <p class="testimonial-text">離開職場快 8 年，對電腦很沒自信。上完課才發現，原來用 AI 寫自我介紹、整理履歷這麼簡單！面試前一晚還讓 AI 幫我模擬問答，帶著滿滿的準備去，整個人都不一樣了。</p>
-                    <div class="testimonial-author">
-                        <div class="author-initial" style="background:#FEF3C7;color:#B45309;">L</div>
-                        <div>
-                            <div class="author-name">林媽媽</div>
-                            <div class="author-role">重返職場媽媽 / 現任行政專員</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-up">
-                    <p class="testimonial-text">以前光整理團購訂單就要花我半天，孩子睡了才能開始回訊息。上完課之後，讓 AI 幫我自動整理報表、寫好推廣文，下午接完小孩還有時間喘口氣。這才叫做「做媽媽，也做自己」啊！</p>
-                    <div class="testimonial-author">
-                        <div class="author-initial" style="background:#EFF6FF;color:#1D4ED8;">W</div>
-                        <div>
-                            <div class="author-name">吳太太</div>
-                            <div class="author-role">兩寶媽 / 團購經營者</div>
-                        </div>
-                    </div>
+                <div class="about-content fade-up">
+                    <span class="badge"
+                        style="background:var(--amber-light);color:#92400E;border:1px solid #FDE68A;margin-bottom:16px;">講師特色</span>
+                    <h2>決策思考力與 AI 應用講師，帶妳把複雜工具變成可執行的方法</h2>
+                    <p>
+                        講師擅長將抽象的 AI 概念拆成簡單步驟，讓學員不只聽懂，更能在課堂中直接完成自己的內容產出與工作流程。
+                    </p>
+                    <ul class="about-list" role="list">
+                        <li>
+                            <span class="check-icon" aria-hidden="true">✓</span>
+                            <span>決策思考力與 AI 應用講師</span>
+                        </li>
+                        <li>
+                            <span class="check-icon" aria-hidden="true">✓</span>
+                            <span>擅長將複雜概念轉化為簡單實用的方法</span>
+                        </li>
+                        <li>
+                            <span class="check-icon" aria-hidden="true">✓</span>
+                            <span>專注協助女性與媽媽提升職場與創業競爭力</span>
+                        </li>
+                        <li>
+                            <span class="check-icon" aria-hidden="true">✓</span>
+                            <span>結合顧問式思維與實戰教學</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PRICING -->
-    <section id="pricing" class="pricing" aria-label="課程報名">
+    <section id="pricing" class="pricing" aria-label="課程費用與報名">
         <div class="container">
             <p style="text-align:center;margin-bottom:16px;">
                 <span class="badge"
-                    style="background:rgba(255,255,255,.12);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.2);">限時姊妹推廣價</span>
+                    style="background:rgba(255,255,255,.12);color:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.2);">名額有限，額滿即止</span>
             </p>
-            <h2 class="section-title fade-up">現在報名，只要 NT$ 800</h2>
-            <p class="price-sub fade-up">這不是一頓飯的錢，這是妳創業生涯的複利投資。</p>
+            <h2 class="section-title fade-up">課程費用</h2>
+            <p class="price-sub fade-up">可先從 2 小時體驗課開始，也能直接報名一日實體工作坊或套票方案。</p>
 
             <div class="price-card fade-up">
-                <span class="price-badge">限時優惠</span>
-                <div class="price-number"><span>NT$</span> 800</div>
-                <p class="price-note">我老公被我盧了很久，才答應給出這個推廣價，趁他還沒後悔快報名。</p>
+                <span class="price-badge">早鳥優惠</span>
+                <div class="price-number"><span>NT$</span> 4,200</div>
+                <p class="price-note">一日實體工作坊原價 NT$4,800；體驗課 + 工作坊套票 NT$5,000。</p>
+
+                <div class="pricing-table-wrap">
+                    <table class="pricing-table" aria-label="課程價格表">
+                        <thead>
+                            <tr>
+                                <th>課程</th>
+                                <th>費用</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2 小時體驗課</td>
+                                <td>NT$800</td>
+                            </tr>
+                            <tr>
+                                <td>一日實體工作坊</td>
+                                <td>NT$4,800</td>
+                            </tr>
+                            <tr>
+                                <td>早鳥優惠</td>
+                                <td class="price-strong">NT$4,200</td>
+                            </tr>
+                            <tr>
+                                <td>體驗課＋工作坊套票</td>
+                                <td>NT$5,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <ul class="price-list" role="list">
-                    <li><span class="dot" aria-hidden="true"></span>實戰操作，課後立即有成品</li>
-                    <li><span class="dot" aria-hidden="true"></span>30 年資深工程師親自帶路</li>
-                    <li><span class="dot" aria-hidden="true"></span>專屬 AI 應用流程手冊</li>
-                    <li><span class="dot" aria-hidden="true"></span>終身受用的數位邏輯思維</li>
+                    <li><span class="dot" aria-hidden="true"></span>完整招生或品牌文案</li>
+                    <li><span class="dot" aria-hidden="true"></span>專業簡報或宣傳海報</li>
+                    <li><span class="dot" aria-hidden="true"></span>專屬 Prompt 模板</li>
+                    <li><span class="dot" aria-hidden="true"></span>個人 AI 工作流程 SOP</li>
                 </ul>
-                <a href="https://forms.gle/W2F9CiJtAFFVK9zC7" target="_blank" rel="noopener" class="btn-primary" id="pricing-cta-btn" style="font-size:1.1rem;padding:20px 56px;display:inline-block;">✨ 立即填寫報名表</a>
-                <p class="price-disclaimer" style="margin-top:20px;">※ 填寫後我們將於 24 小時內與您確認報名資訊</p>
+                <a href="https://forms.gle/W2F9CiJtAFFVK9zC7" target="_blank" rel="noopener" class="btn-primary"
+                    id="pricing-cta-btn" style="font-size:1.1rem;padding:20px 56px;display:inline-block;">立即報名</a>
+                <p class="price-disclaimer" style="margin-top:20px;">※ 填寫表單後，將由主辦方與您確認報名場次與後續資訊。</p>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer role="contentinfo">
-        <p class="footer-brand">ARZ Mom Academy</p>
-        <p class="footer-tagline">品牌這件事，我有一手。我是鑽石 Amy，我會陪妳一起優雅地贏過來。</p>
-        <p class="footer-copy">© 2026 ARZ Mom Academy. All rights reserved.</p>
+        <p class="footer-brand">AI實戰工作坊</p>
+        <p class="footer-tagline">讓 AI 成為你的超級助理，開啟高效與自信的新生活。</p>
+        <p class="footer-copy">© 2026 AI實戰工作坊. All rights reserved.</p>
     </footer>
 
     <script>
